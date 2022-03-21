@@ -102,7 +102,7 @@
     <div class="caja__preguntas">
         <img src="../img/logo.jpeg" class="caja__preguntas__img">
     </div>
-    <div class="accordion container-accordion-preguntas" id="accordionExample">
+    <div class="accordion container-accordion-preguntas container-accordion" id="accordionExample">
         <div class="accordion-item accordion-separacion">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -139,40 +139,42 @@
             </div>
           </div>
         </div>
-      </div>
-    <div class="accordion accordion-flush container-accordion-preguntas2" id="accordionFlushExample">
         <div class="accordion-item accordion-separacion">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                ¿Con cuanto de anticipacion puedo realizar mi pedido?
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Puedo pedirte una torta personalizada?
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body letter-accordion">
-              Los pedidos los tomamos con 48/72hs de anticipacion, para tortas perzonalizadas u otros trabajos 7 dias como minimo.</div>
+              Si, las tortas personalizadas tenes que contactarme por whatsapp y se toman con 7 dias de anticipacion
+            </div>
           </div>
         </div>
         <div class="accordion-item accordion-separacion">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                ¿Por donde puedo contactarte?
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              ¿Con que puedo abonar?
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
             <div class="accordion-body letter-accordion">
-              Me podes contactar por mis Redes Sociales(instagram, facebook, whatsapp) o por la pagina web Contactos.</div>
+              Podes abonar en efectivo, abonando por mi domicilio, por cuenta DNI, mercado pago o transferencia
+            </div>
           </div>
         </div>
         <div class="accordion-item accordion-separacion">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                ¿Hacen envios? ¿Por donde puedo retirar mi compra?
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed letter-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ¿Otras dudas o preguntas?
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body letter-accordion">Hacemos envios en Gonnet, La Plata y sus alrededores o hace tu consulta por otras zonas,el costo del mismo es de acuerdo a la zona de entrega o podes retirar por mi domicilio.</div>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body letter-accordion">
+              Si tenes alguna otra duda no dudes en escribir por mis redes o por la pagina. Estoy para escuchar, criticas, opiniones, preguntas siempre y cuando haya respeto del otro lado.
+            </div>
           </div>
-        </div>
+        </div> 
     </div>    
     <div class="contenedor__redes__sociales">
         <h4>Seguime!!</h4>
@@ -191,13 +193,25 @@
             </div>    
             <div class="footer__info">
                 <div class="footer__info__separacion">    
-                    <div class="footer__columna">
-                        <h4>MEDIOS DE PAGO</h4>
-                        <img src="../img/cuenta-dni.jpg" class="footer__img">
-                        <img src="../img/mastercard-logo.png" class="footer__img">
-                        <img src="../img/visa-logo.jpg " class="footer__img">
-                        <img src="../img/mercadopago.png" class="footer__img">
-                    </div>
+                  <div class=" footer__columna ">
+                    <h4>MEDIOS DE PAGO</h4>
+                    <div class="grid__tarjetas">
+                        <div class="grid-tarjetas-separacion"><img src="../img/cuenta-dni.jpg" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="../img/mastercard-logo.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="../img/visa-logo.jpg " class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="../img/rapipago.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/todopago@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="footer__img"></div>
+                        <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="footer__img"></div>
+                    </div>    
+                </div>
                     <div class="footer__columna">
                         <h4>REDES SOCIALES</h4>
                         <ul class="footer__lista1">

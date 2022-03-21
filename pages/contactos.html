@@ -97,7 +97,7 @@
             </nav> 
         </div>
     </div>
-    <section class="section__contacto__grid">  
+    <section class="container section__contacto__grid">  
         <div class="div__contacto__columna">
             <div id="div__contacto__pagina">
                 <div class="div__contacto__titulo">
@@ -118,8 +118,9 @@
                         </ul>
                         <h4>Medios de pago</h4>
                         <ul class="lista__pago">
-                            <li>Transferencia bancaria</li>
-                            <li>Mercado Pago</li>
+                            <li>- TRANSFERENCIA BANCARIA</li>
+                            <li>- MERCADO PAGO</li>
+                            <li>- EFECTIVO</li>
                         </ul>
                     </div>
                 </div>
@@ -127,23 +128,29 @@
         </div>    
         <div class="div__contacto__columna2">   
             <div class="form-group separacion--cada--uno div__contacto__columna2__nombre">
-                <input type="text" autocorrect="off" autocomplete="name" id="name" class="form-control " name="name" onfocus="if (this.value == 'Nombre') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nombre';}" value="Nombre">
                 <label for="name">Nombre</label>
+                <input type="text" autocorrect="off" autocomplete="name" id="name" class="form-control " name="name" onfocus="if (this.value == 'Nombre') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nombre';}" value="Nombre">
+                
             </div>
             <div class="mb-3 separacion--cada--uno div__contacto__columna2__email">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                
             </div>
             <div class="form-group separacion--cada--uno div__contacto__columna2__telefono">
-                <input id="phone" type="tel" autocorrect="off" autocomplete="tel" class="form-control" onfocus="if (this.value == 'Teléfono') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Teléfono';}" value="Teléfono" name="phone">
                 <label for="phone">
                     Teléfono
                     <span class="mini-text">(Opcional)</span>
                 </label>
+                <input id="phone" type="tel" autocorrect="off" autocomplete="tel" class="form-control" onfocus="if (this.value == 'Teléfono') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Teléfono';}" value="Teléfono" name="phone">
+                
             </div>    
             <div class="mb-3 separacion--cada--uno div__contacto__columna2__textarea">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="boton__contactos">
+                <button type="button" class="btn btn-secondary boton--estilos">Enviar</button>
             </div>
         </div>    
     </section>         
@@ -155,12 +162,24 @@
             </div>    
             <div class="footer__info">
                 <div class="footer__info__separacion">    
-                    <div class="footer__columna">
+                    <div class=" footer__columna">
                         <h4>MEDIOS DE PAGO</h4>
-                        <img src="../img/cuenta-dni.jpg" class="footer__img">
-                        <img src="../img/mastercard-logo.png" class="footer__img">
-                        <img src="../img/visa-logo.jpg " class="footer__img">
-                        <img src="../img/mercadopago.png" class="footer__img">
+                        <div class="grid__tarjetas">
+                            <div class="grid-tarjetas-separacion"><img src="../img/cuenta-dni.jpg" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/mastercard-logo.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/visa-logo.jpg " class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/rapipago.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/todopago@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="footer__img"></div>
+                        </div>    
                     </div>
                     <div class="footer__columna">
                         <h4>REDES SOCIALES</h4>
