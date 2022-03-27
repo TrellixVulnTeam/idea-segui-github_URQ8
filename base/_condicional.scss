@@ -1,0 +1,34 @@
+$vista: desktop;
+
+$h3desktop: 30px;
+$preciodesktop: 18px; 
+
+$h1mobile: 20px;
+$preciomobile: 10px;
+
+body{
+@if $vista == desktop {
+    @media only screen and (min-width:1024px){
+        h3{font-size:h3desktop;}
+        p{font-size:$preciodesktop;}
+        a{color:#fff;}
+        }
+    } @else if $vista == mobile {
+        @media only screen and (min-width:767px){
+            h3{font-size:h3mobile;}
+            p{font-size:$preciomobile;}
+            a{color:rgb(0, 0, 0)}
+        }
+    } @else{
+        h3{font-size:35px}
+        p{font-size: 25px}
+        a{color:#fff;}
+    }
+
+}
+
+
+
+
+
+

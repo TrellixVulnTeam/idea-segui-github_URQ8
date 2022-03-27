@@ -1,0 +1,9 @@
+@mixin colores($colors, $ancho, $border) {
+    background-color: $colors;
+    width: $ancho;
+    padding: $border;
+
+}
+.footer-index{
+    @include colores(#a72095, 100%, 25px)
+}
