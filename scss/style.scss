@@ -1,0 +1,422 @@
+@import "../componentes/encabezado";
+@import "../componentes/nav";
+@import "../componentes/main";
+@import "../componentes/section";
+@import "../componentes/footer";
+@import "../base/condicional";
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/maps";
+@import "../base/operadores";
+@import "../base/variables";
+
+
+
+
+
+
+
+
+/*EMPIEZA ACCORDION Y DIV__LOGO DE PREGUNTAS */
+.caja__preguntas{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+    .caja__preguntas__img{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+        width: 20%;
+    }
+}
+.container-accordion-preguntas{
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 4rem;
+    .accordion-separacion{
+        padding: 20px;
+    }
+    .letter-accordion{
+        font-family: 'Questrial', sans-serif;
+    }
+    
+}
+/*CONTENEDOR__REDES__SOCIALES*/
+.contenedor__redes__sociales{
+    display:none;
+}
+/*CARRITO*/
+.section__carrito{
+    width: 100%;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    justify-content:space-between;
+    flex-direction:column;
+    h1{
+        padding: 5rem 0 0 10rem;
+        font-size: 50px;
+    }
+    .section__carrito__contenedor{
+        padding: 5rem 0 0 13rem;
+        font-size:20px;
+        .section__carrito__subcontenedor{
+            border: 2px solid rgb(235, 153, 235);
+            width:55%;
+            background-color: #f5deef;
+            height:80px;
+            display:flex;
+            border-top: 3px solid rgb(193, 77, 204);
+            .carrito__subcontenedor{
+                padding: 20px 0 0 10px;
+                font-size: 2rem;
+            }
+            h2{
+                padding:20px 0 0 30px
+            }
+        }
+    }
+    .section__carrito__boton{
+        padding: 5rem  0 0 13rem;
+    }
+    .section__carrito__volver-tienda{
+        font-size:20px;
+        border: 2px solid rgb(132, 33, 156);
+        color: #fff;
+        background-color: rgb(132, 33, 156);
+        padding:10px;
+        border-radius: 10px;;
+    }   
+} 
+/*icono__menu*/
+.icon__menu{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+    
+
+}
+#label__check{
+    width:26px;
+    height:100%;
+    display: none;
+}
+#check__menu{
+    display: none;
+}
+/*CONTACTOS*/
+.section__contacto__grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    width:90%;
+    height: 100%;
+    margin-left:30px;
+    color: rgb(85, 84, 84);
+    .div__contacto__columna{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        width:50%;
+        .div__contacto__titulo{
+            h1{
+                padding-left:50px;
+                font-size:40px;
+            }
+        }
+        .div__contacto__fila{
+            .div__contacto__fila__info{
+                .lista__medios__contactos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 20px;
+                    margin: left;
+                    li{
+                        padding: 2rem;
+                    }
+                }
+                h4{
+                    font-size: 30px;   
+                    padding:20px 0 0 40px;
+                    border-top: 1px solid #727070;
+                    width: 55%;
+                }
+                .lista__seguinos{
+                    display: flex;
+                    li{
+                        a{
+                            font-size: 40px;
+                            color: #f1cbe8;
+                            font-size: 35px;
+                            text-decoration: none;
+                            :hover{
+                                transition: all 1.5s ease;
+                                background-color: rgb(142, 51, 179);
+                            }
+                            .icon__redes__sociales{
+                                width:60px;
+                                height:55px;
+                                text-align: center;
+                                border: 3px solid rgb(0, 0, 0);
+                                border-radius:50%;
+                            }
+                            .fa-brands.icon__redes__sociales{
+                                line-height:50px;
+                            }
+                        }
+
+                    }
+                }
+                .lista__pago{
+                    li{
+                        font-size:20px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+
+                }
+            }
+        }
+    }
+}    
+.div__contacto__columna2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    .separacion--cada--uno{
+        padding: 80px 0 80px 0;
+    }
+    
+}
+
+/* RESPONSIVE INDEX PREGUNTAS CARRITO CONTACTOS PRODUCTOS*/
+@media screen and (max-width:480px){
+    /*HEADER*/
+    
+    .header{
+        height:60px;
+        width:480px;
+        padding: 0;
+        margin: 0;
+        li{
+            img{
+                height:25px;
+            }
+            p{
+                display:none;
+            }
+        }
+        .header__container__lista5{
+            img{
+                display:none;
+            }
+        }
+        .header__container__icons{
+            display:none;
+        }   
+    }
+    /*NAVEGACION*/
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
+        display: flex;
+        box-shadow: 0 0 3px rgba(0,0,0,0.8);
+        width: 100%;
+    }
+    .container__menu{
+        display: none;
+    }
+    /*MAIN*/
+    .main{
+        width: 80%;
+        margin: 8px;
+        padding: 10px;
+        .main__lista{
+            display: flex;
+            justify-content: space-between;
+            overflow-x: scroll;
+            li{
+                display: inline-block;
+                a{
+                    width: 137px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    /*H2 PRODUCTOS MAS VENDIDOS*/
+    .titulo__productos{
+        margin: 30px 0 0 0 ;
+        padding:0;
+        .titulo__h2{
+            width:200%
+        }
+    }
+    /*SECTION*/
+    .section{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-top:20px;
+        .section__columnas{
+            margin: center;
+        }
+    }
+    /*FOOTER*/
+    .footer{
+        width: 480px;
+        padding:0;
+        margin: 0;
+        .footer__container{
+            display:flex;
+            flex-direction: column;  
+            padding:0px;  
+            .footer__logo{
+                display:flex;
+                flex-direction: column;
+                padding-bottom: 4rem;
+                width: 20%;
+                .footer__logo__principal{
+                    display:none;
+                }
+            }
+        }
+        .footer__info{
+            padding: 0;
+            margin: 0;
+            .footer__info__separacion{
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0 20px 0;
+                .footer__columna{
+                    margin:30px;
+                    h4{
+                        width:200px;
+                    }
+                    .footer__lista1 {
+                        display:flex;
+                        justify-content:space-between;
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            margin-left:50px;}
+                    }
+                    .footer__lista2 {
+                        li{
+                            width:280px;
+                            padding: 5px;
+                            color: #fff;
+                        }
+                    }    
+                       
+                }
+            }
+        }
+    }
+     /*ICONO WHATSAPP*/
+    .container_icon_whatsapp{
+        padding-bottom: 20px;
+    }
+     /*PREGUNTAS*/
+    /*ACCORDION*/
+    .container-accordion{
+        width:70%;
+        margin-left: 5rem;
+        padding:50px 0 50px 0;
+        
+    }
+    /*CONTENEDOR REDES SOCIALES*/
+    .contenedor__redes__sociales{
+        width:480px;
+        height:180px;
+        display:flex;
+        flex-direction: column;
+        padding: auto;
+        margin: auto;
+        background-color: rgb(228, 161, 219);
+        color: #fff;
+        h4{
+            display:flex;
+            justify-content:center;
+            padding:10px 0 15px 0;
+            font-size: 25px;
+        }
+        p{
+            display:flex;
+            justify-content:center;
+            font-size:15px;
+        }
+        ul{
+            display:flex;
+            justify-content:center;
+            padding:30px 0 50px 0;
+            li{
+                padding: 0 30px 0 40px;
+                font-size:30px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    /*CONTACTOS*/
+    .section__contacto__grid{
+        
+        display: grid;
+        grid-template-columns: 1fr ;
+        .div__contacto__columna{
+            margin: 0;
+            .div__contacto__titulo{
+                h1{
+                    padding: 0;
+                    font-size: 30px;
+                }
+            }
+            .div__contacto__fila{
+                .div__contacto__fila__info{
+                    width: 100%;
+                    padding: 0;
+                    ul{
+                        li{
+                        padding:20px;
+                        width:150%;
+                        font-size:14px;
+                        }
+                    }
+                    h4{
+                        padding: 10px 0;
+                        width: 100%;
+                        font-size:25px
+                    }
+                    .lista__medios__contactos{ 
+                        li{
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }   
+                    .lista__seguinos{
+                        margin: 0;
+                        padding: 0;
+                    } 
+                    .lista__pago{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            font-family: "Font Awesome 6 Free";
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .boton__contactos{
+        padding-bottom: 60px;
+    }
+}
+

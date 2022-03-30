@@ -1,0 +1,18 @@
+%disposicion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.section-index{
+    background-color: coral;
+    @extend %disposicion;
+}
+.section-columna{
+    background-color:#a33888;
+    background-color: #2e2c2c;
+    @extend %disposicion;
+}
+.section-description{
+    background-color: #f36ad1;
+    @extend %disposicion;
+}

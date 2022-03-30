@@ -1,0 +1,80 @@
+@import "../base/extends";
+@import "../base/listas";
+/*Empieza el Section*/
+.section{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    .section__columnas{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        .section__description{
+            margin: 10px 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664);
+            width:50%;
+            transition: all 3s ease;
+            background-color: nth($colores, 12);
+            a{
+                img{
+                    width:100%;  
+                }
+            }
+            .section__description__container{
+                font-size: 18px;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;  
+                a{
+                    text-decoration: none;
+                    h3{
+                        color: rgb(255, 255, 255);
+                        margin: 10px;
+                        font-family: "Helvetica Neue", "Helvetica";
+                        :hover{
+                            transition: all 2s ease;
+                            background-color: rgb(39, 146, 146);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*Termina el Section*/
+/*Empieza caja box__dulce del mismo section*/
+.caja__boxdulce{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin:50px 0 30px 0 ;
+    .caja__boxdulce__description{
+        margin: 10px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664);
+        width:50%;
+        background-color: rgb(46, 44, 44);
+        font-size: 18px;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+            img{
+                width:100%;
+            }
+        }
+        .caja__boxdulce__description__container{
+            margin: 10px;
+            a{
+                text-decoration: none;
+                h3{
+                    color: rgb(255, 255, 255);
+                    margin: 10px;
+                    font-family: "Helvetica Neue", "Helvetica";
+                }
+            }
+            .precio{
+                color: #fff;
+            }
+        }
+    }
+}
+/*Termina caja box__dulce*/
