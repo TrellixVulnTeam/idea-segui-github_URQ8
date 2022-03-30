@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Empieza el Nav*/
 /*NAVBAR*/
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
@@ -9,6 +10,20 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
     width: 100%;
     height: 120px;
     background-color: gray;
+=======
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/maps";
+/*NAVEGACION*/
+nav .navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
+    display: none;
+    
+}
+.container__menu{
+    width:100%;
+    height: 120px;
+    background-color: nth($colores, 2);
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
     .menu{
         max-width: 1200px;
         margin-left:5rem;
@@ -24,7 +39,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                 li{
                     height: 100%;
                     position:relative;
+<<<<<<< HEAD
                     font-size: 20px;
+=======
+                    font-size: $font-size;
+                    list-style:none;
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                     a{
                         width:130%;
                         height:100%;
@@ -36,6 +56,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                         transition: all 300ms ease;
                         font-family:'Lobster', cursive; 
                         text-decoration: none;
+<<<<<<< HEAD
                         .icon__arriba{
                             padding: 0px 0px 0px 10px;
                         }
@@ -58,6 +79,18 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                             top:70px;
                         }
                     }
+=======
+                        :hover{
+                            transform:scale(1.1);
+                            background-color:rgb(221, 220, 220);
+                            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+                            color: #fff;
+                        }
+                    }    
+                    .icon__arriba{
+                        padding: 0px 0px 0px 10px;
+                    }    
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                     ul{
                         width:320px;
                         display:flex;
@@ -71,7 +104,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                         opacity: 0;
                         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
                         z-index: 10;
+<<<<<<< HEAD
                         transition: all 300ms ease;
+=======
+                        transition: all 300ms ease; 
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                         :before{
                             content: "";
                             width:0;
@@ -94,6 +131,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                                 transition: all 300ms ease;
                                 font-family:'Lobster', cursive;
                                 text-decoration: none;
+<<<<<<< HEAD
                             }
                             :hover{
                                 background:rgb(219, 95, 215);
@@ -105,11 +143,34 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                             }
                             
                         }
+=======
+                                :hover{
+                                    background:rgb(219, 95, 215);
+                                    color:#fff;
+                                    transition:scale(1.2);
+                                    padding-left: 30px;
+                                    font-size: 25px;
+                                    text-decoration: none;
+                                }    
+                            }
+                        }
+                        
+                    }    
+                    :hover{
+
+                        ul{
+                        visibility:visible;
+                        opacity:1;
+                        top:70px; 
+                    }
+                        
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                     }
                 }
             }
         }
     }
+<<<<<<< HEAD
 }
 /*Termina el Nav*/
 /*Empieza el Logo*/
@@ -125,3 +186,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
     }
 }  
 /*Termina el Logo*/
+=======
+}
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9

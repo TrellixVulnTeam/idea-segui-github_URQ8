@@ -1,6 +1,12 @@
 @import "../base/extends";
+<<<<<<< HEAD
 @import "../base/listas";
 /*Empieza el Section*/
+=======
+
+
+/*SECTION*/
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
 .section{
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -13,6 +19,7 @@
             margin: 10px 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664);
             width:50%;
+<<<<<<< HEAD
             transition: all 3s ease;
             background-color: nth($colores, 12);
             a{
@@ -43,6 +50,38 @@
 }
 /*Termina el Section*/
 /*Empieza caja box__dulce del mismo section*/
+=======
+            transition: all 300ms ease;
+            background-color: rgb(46, 44, 44);
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+            .section__description__cotainer{
+                font-size: 18px;
+                padding: 10px 10px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                a{
+                    text-decoration:none;
+                }
+                h3{
+                    color: rgb(255, 255, 255);
+                    margin:10px;
+                    font-family: "Helvetica Neue", "Helvetica";
+                    :hover{
+                        transition:all 2s ease;
+                        background-color: rgb(39, 146, 146);
+                    }
+                }   
+            }
+        }
+        
+    }
+}
+/*CAJA BOX__BOXDULCE*/
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
 .caja__boxdulce{
     display: flex;
     justify-content:center;
@@ -60,6 +99,7 @@
             img{
                 width:100%;
             }
+<<<<<<< HEAD
         }
         .caja__boxdulce__description__container{
             margin: 10px;
@@ -78,3 +118,28 @@
     }
 }
 /*Termina caja box__dulce*/
+=======
+
+        }
+        .caja__boxdulce__description__container{
+            margin: 10px;
+            h3{
+                color: rgb(255, 255, 255);
+                margin: 10px;
+                font-family: "Helvetica Neue", "Helvetica";
+                :hover{
+                    transition: all 2s ease;
+                    background-color: rgb(39, 146, 146);
+                }
+            }
+            .precio{
+                color: #ffff;
+            }
+        }    
+    }
+}
+
+
+
+
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9

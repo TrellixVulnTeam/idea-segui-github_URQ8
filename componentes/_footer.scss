@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 
 @import "../base/mixin";
 
 /*Empieza el Footer*/
 .footer{
     background-color: rgb(26, 25, 25);
+=======
+@import "../base/variables";
+@import "../base/listas";
+.footer{
+    background-color: nth($colores, 11);
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
     margin-top: 4rem;
     padding: 4rem 1rem 1rem 0;
     border-top:3px solid #f36ad1;
@@ -21,6 +28,7 @@
             flex-direction: column;
             border-bottom: 3px solid #fff;
             .footer__titulo{
+<<<<<<< HEAD
                 font-size:40px;
                 padding:30px 0 0 30px;
             }
@@ -29,6 +37,16 @@
                 padding:30px 0 30px 30px;
             }
         }
+=======
+                font-size: nth($size, 3);
+                padding:30px 0 0 30px;
+                .footer__logo__principal{
+                    width:30%;
+                    padding:30px 0 30px 30px;
+                }
+            }
+        }    
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
         .footer__info{
             width:75%;
             padding-left: 5rem;
@@ -51,7 +69,11 @@
                         .grid-tarjetas-separacion{
                             width:50px;
                             height:40px;
+<<<<<<< HEAD
                             color: white;
+=======
+                            color: white; 
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                         }
                         .footer__img{
                             width:50px;
@@ -59,7 +81,10 @@
                             margin: 0 5px 5px 0;
                             border-radius:10%;
                         }
+<<<<<<< HEAD
                     }
+=======
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                     .footer__lista1{
                         li{
                             display:inline-block;
@@ -72,7 +97,14 @@
                                 :hover{
                                     transition: all 1.0s ease;
                                     background-color: #a33888;
+<<<<<<< HEAD
                                 }
+=======
+                                }    
+                            }
+                            .fa-brands{
+                                line-height: 46px;
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                             }
                             .footer__icon{
                                 width:50px;
@@ -81,6 +113,7 @@
                                 border: 2px solid #fff;
                                 border-radius:50%;
                             }
+<<<<<<< HEAD
                             .fa-brands.footer__icon{
                                 line-height: 46px;
                             }
@@ -88,14 +121,26 @@
                     }
                     .footer__lista2{
                         padding-top: 30px;
+=======
+                        }
+                    }    
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
                     }
                 }
             }
         }
+<<<<<<< HEAD
     }
 }
 /*Termina el Footer*/
 /*icono whatsapp empieza para todos los HTML*/
+=======
+            
+        
+    }
+}
+/*ICONO WHATSAPP*/
+>>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
 .container_icon_whatsapp{
     position: fixed;
     width: 120px;
