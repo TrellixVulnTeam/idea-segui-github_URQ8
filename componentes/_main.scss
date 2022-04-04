@@ -52,11 +52,10 @@
                 text-decoration: none;
             }
 
-            :hover {
+            &:hover {
                 transition: all 300ms ease;
                 background-color: rgb(230, 132, 208);
             }
-
         }
     }
 }

@@ -1,118 +1,92 @@
-<<<<<<< HEAD
-/*Empieza el Nav*/
-/*NAVBAR*/
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
-    display: none;
-    
-}
-/*MENU*/
-.container__menu{
-    width: 100%;
-    height: 120px;
-    background-color: gray;
-=======
 @import "../base/variables";
 @import "../base/listas";
 @import "../base/maps";
+
 /*NAVEGACION*/
-nav .navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
-    display: none;
-    
-}
-.container__menu{
-    width:100%;
+.container__menu {
+    width: 100%;
     height: 120px;
-    background-color: nth($colores, 2);
->>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
-    .menu{
+    background-color: nth($colores, 13);
+
+    .menu {
         max-width: 1200px;
-        margin-left:5rem;
+        margin-left: 5rem;
         height: 100%;
         padding: 0;
-        nav{
+
+        .navegacion {
             height: 100%;
-            ul{
+
+            ul {
                 width: 100%;
                 height: 100%;
-                display:flex;
-                justify-content:space-between;
-                li{
+                display: flex;
+                justify-content: space-between;
+
+                li {
                     height: 100%;
-                    position:relative;
-<<<<<<< HEAD
-                    font-size: 20px;
-=======
+                    position: relative;
                     font-size: $font-size;
-                    list-style:none;
->>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
-                    a{
-                        width:130%;
-                        height:100%;
-                        display:flex;
-                        align-items: center;
-                        padding-left:100px;
-                        margin-left:30px;
-                        color: #fff;
-                        transition: all 300ms ease;
-                        font-family:'Lobster', cursive; 
-                        text-decoration: none;
-<<<<<<< HEAD
-                        .icon__arriba{
-                            padding: 0px 0px 0px 10px;
-                        }
-                    }
-                    :hover{
-                        transform:scale(1.1);
-                        background-color:rgb(221, 220, 220);
-                        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
-                        color: #fff;
-                    }
-                    .nav__carrito{
+                    list-style: none;
+
+                    a {
+                        width: 130%;
+                        height: 100%;
                         display: flex;
                         align-items: center;
+                        padding-left: 100px;
+                        margin-left: 30px;
+                        color: #fff;
+                        transition: all 300ms ease;
+                        font-family: 'Lobster', cursive;
+                        text-decoration: none;
 
-                    }
-                    :hover{
-                        ul{
-                            visibility:visible;
-                            opacity:1;
-                            top:70px;
-                        }
-                    }
-=======
-                        :hover{
-                            transform:scale(1.1);
-                            background-color:rgb(221, 220, 220);
-                            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+                        &:hover {
+                            transform: scale(1.1);
+                            background-color: rgb(221, 220, 220);
+                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
                             color: #fff;
                         }
-                    }    
-                    .icon__arriba{
-                        padding: 0px 0px 0px 10px;
-                    }    
->>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
-                    ul{
-                        width:320px;
-                        display:flex;
+
+                        .icon__arriba {
+                            padding: 0px 0px 0px 10px;
+                        }
+
+                        .nav__carrito {
+                            display: flex;
+                            align-items: center;
+
+                        }
+                    }
+
+                    &:hover {
+                        ul {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 70px;
+                        }
+                    }
+
+                    ul {
+                        width: 350px;
+                        height: 350px;
+                        display: flex;
                         flex-direction: column;
                         background-color: #fff;
-                        position:absolute;
+                        position: absolute;
                         margin-top: 50px;
                         left: 55px;
                         padding: 20px 20px;
                         visibility: hidden;
                         opacity: 0;
-                        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
                         z-index: 10;
-<<<<<<< HEAD
                         transition: all 300ms ease;
-=======
-                        transition: all 300ms ease; 
->>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
-                        :before{
+
+                        &:before {
                             content: "";
-                            width:0;
-                            height:0;
+                            width: 0;
+                            height: 0;
                             border-left: 12px solid transparent;
                             border-right: 12px solid transparent;
                             border-bottom: 12px solid white;
@@ -120,72 +94,52 @@ nav .navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive{
                             top: -12px;
                             left: 20px;
                         }
-                        li{
-                            a{
-                                display: block;
-                                color: rgb(241, 191, 239);
-                                padding: 15px;
-                                padding-left:20px;
-                                margin-top: 10px;
-                                font-size:20px;
-                                transition: all 300ms ease;
-                                font-family:'Lobster', cursive;
-                                text-decoration: none;
-<<<<<<< HEAD
-                            }
-                            :hover{
-                                background:rgb(219, 95, 215);
-                                color:#fff;
-                                transition:scale(1.2);
-                                padding-left: 30px;
-                                font-size: 25px;
-                                text-decoration: none;
-                            }
-                            
-                        }
-=======
-                                :hover{
-                                    background:rgb(219, 95, 215);
-                                    color:#fff;
-                                    transition:scale(1.2);
-                                    padding-left: 30px;
-                                    font-size: 25px;
-                                    text-decoration: none;
-                                }    
-                            }
-                        }
-                        
-                    }    
-                    :hover{
 
-                        ul{
-                        visibility:visible;
-                        opacity:1;
-                        top:70px; 
-                    }
-                        
->>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
+                        li {
+                            a {
+                                display: block;
+                                color: rgb(235, 181, 233);
+                                padding: 15px;
+                                padding-left: 20px;
+                                margin-top: 10px;
+                                font-size: 20px;
+                                transition: all 300ms ease;
+                                font-family: 'Lobster', cursive;
+                                text-decoration: none;
+                                max-width: 286px;
+
+                                &:hover {
+                                    background: rgb(219, 95, 215);
+                                    color: #fff;
+                                    transition: scale(1.2);
+                                    padding-left: 30px;
+                                    font-size: 20px;
+                                    text-decoration: none;
+                                    max-width: 286px;
+                                }
+                            }
+                        }
+
                     }
                 }
             }
         }
     }
-<<<<<<< HEAD
 }
+
 /*Termina el Nav*/
 /*Empieza el Logo*/
-.container__logo{
+.container__logo {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-top: 2rem;
     padding: 2rem;
-    .container__logo__img{
-        width:25%;
-        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);
+
+    .container__logo__img {
+        width: 25%;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
         background-color: rgb(240, 190, 241);
     }
-}  
-/*Termina el Logo*/
-=======
 }
->>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
+
+/*Termina el Logo*/

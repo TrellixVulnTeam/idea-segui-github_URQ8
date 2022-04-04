@@ -1,0 +1,19 @@
+nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
+        display: block;
+    }
+
+    .navbar-responsive {
+        display: flex;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+        border: 2px solid rgb(0, 0, 0, 0.15);
+        width: 100%;
+    }
+
+
+
+}

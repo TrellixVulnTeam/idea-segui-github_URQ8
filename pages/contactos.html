@@ -11,7 +11,7 @@
         content="HTML, CSS, META, DESAYUNOS ARTESANALES, MERIENDAS, ALFAJORES, CAJAS DULCES, PEDIDOS A DOMICILIO, PASTELERIA JUNIOR, BUENOS AIRES , LA PLATA">
     <title>PetitPiliDesayunos, bienvenidos!! Contacto </title>
     <!--ICONO PAGINA PRINCIPAL-->
-    <link rel="shortcut icon" href="./img/logo.jpeg">
+    <link rel="shortcut icon" href="../img/logo.jpeg">
     <!--CSS-->
     <link rel="stylesheet" href="../css/style3.css">
     <!--BOOTSTRAP-->
@@ -92,7 +92,7 @@
             <label id="label__check" for="check__menu">
                 <i class="fa-solid fa-bars icon__menu"></i>
             </label>
-            <nav>
+            <nav class="navegacion">
                 <ul>
                     <li><a href="../index.html">Inicio
                             <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
@@ -116,7 +116,11 @@
                             <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li><a href="../pages/carrito.html" class="fa-solid fa-cart-shopping nav__carrito"></a></li>
+                    <li><a href="../pages/carrito.html" class="fa-solid fa-cart-shopping nav__carrito">
+                            <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
+                        </a>
+
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -153,37 +157,45 @@
                 </div>
             </div>
         </div>
-        <div class="div__contacto__columna2">
-            <div class="form-group separacion--cada--uno div__contacto__columna2__nombre">
-                <label for="name">Nombre</label>
-                <input type="text" autocorrect="off" autocomplete="name" id="name" class="form-control " name="name"
-                    onfocus="if (this.value == 'Nombre') {this.value = '';}"
-                    onblur="if (this.value == '') {this.value = 'Nombre';}" value="Nombre">
-
+        <form>
+            <div class="div__contacto__columna2">
+                <div class="col-12">
+                    <div class="form-group separacion--cada--uno div__contacto__columna2__nombre">
+                        <label for="name">Nombre</label>
+                        <input type="text" autocorrect="off" autocomplete="name" id="name" class="form-control "
+                            name="name" onfocus="if (this.value == 'Nombre') {this.value = '';}"
+                            onblur="if (this.value == '') {this.value = 'Nombre';}" value="Nombre" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3 separacion--cada--uno div__contacto__columna2__email">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group separacion--cada--uno div__contacto__columna2__telefono">
+                        <label for="phone">
+                            Teléfono
+                            <span class="mini-text">(Opcional)</span>
+                        </label>
+                        <input id="phone" type="tel" autocorrect="off" autocomplete="tel" class="form-control"
+                            onfocus="if (this.value == 'Teléfono') {this.value = '';}"
+                            onblur="if (this.value == '') {this.value = 'Teléfono';}" value="Teléfono" name="phone">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3 separacion--cada--uno div__contacto__columna2__textarea">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <input class="btn-send btn btn-secondary form-boton" type="submit" value="Enviar">
+                </div>
             </div>
-            <div class="mb-3 separacion--cada--uno div__contacto__columna2__email">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-
-            </div>
-            <div class="form-group separacion--cada--uno div__contacto__columna2__telefono">
-                <label for="phone">
-                    Teléfono
-                    <span class="mini-text">(Opcional)</span>
-                </label>
-                <input id="phone" type="tel" autocorrect="off" autocomplete="tel" class="form-control"
-                    onfocus="if (this.value == 'Teléfono') {this.value = '';}"
-                    onblur="if (this.value == '') {this.value = 'Teléfono';}" value="Teléfono" name="phone">
-
-            </div>
-            <div class="mb-3 separacion--cada--uno div__contacto__columna2__textarea">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="boton__contactos">
-                <button type="button" class="btn btn-secondary boton--estilos">Enviar</button>
-            </div>
-        </div>
+        </form>
     </section>
     <footer class="footer">
         <div class="footer__container">
@@ -193,7 +205,7 @@
             </div>
             <div class="footer__info">
                 <div class="footer__info__separacion">
-                    <div class=" footer__columna">
+                    <div class=" footer__columna ">
                         <h4>MEDIOS DE PAGO</h4>
                         <div class="grid__tarjetas">
                             <div class="grid-tarjetas-separacion"><img src="../img/cuenta-dni.jpg" class="footer__img">
@@ -202,37 +214,26 @@
                                     class="footer__img"></div>
                             <div class="grid-tarjetas-separacion"><img src="../img/visa-logo.jpg " class="footer__img">
                             </div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                            <div class="grid-tarjetas-separacion"><img src="../img/todo-pago.jpg" class="footer__img">
+                            </div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/american-express.jpg"
                                     class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                            <div class="grid-tarjetas-separacion"><img src="../img/banco-hipotecario.png"
                                     class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
-                                    class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
-                                    class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
-                                    class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
-                                    class="footer__img"></div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/banelco.jpg" class="footer__img">
+                            </div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/mercadopago.png" class="footer__img">
+                            </div>
                             <div class="grid-tarjetas-separacion"><img src="../img/rapipago.png" class="footer__img">
                             </div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/todopago@2x.png"
+                            <div class="grid-tarjetas-separacion"><img src="../img/tarjeta_argencard.jpg"
+                                    class="footer__img">
+                            </div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/pacofacil.png" class="footer__img">
+                            </div>
+                            <div class="grid-tarjetas-separacion"><img src="../img/tarjeta-shopping.png"
                                     class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
-                                    class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
-                                    class="footer__img"></div>
-                            <div class="grid-tarjetas-separacion"><img
-                                    src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
+                            <div class="grid-tarjetas-separacion"><img src="../img/tarjeta-naranja.png"
                                     class="footer__img"></div>
                         </div>
                     </div>
@@ -264,24 +265,18 @@
     </div>
 
 
-    <<<<<<< HEAD <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-        =======
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://kit.fontawesome.com/96e74fd817.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-        >>>>>>> 81543689cd7e67f2f71e4eef60cf0539384dd4e9
+
+
 </body>
 
 </html>

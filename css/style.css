@@ -1,3 +1,11 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  text-decoration: none;
+
+}
+
 header {
   background-color: grey;
   font-family: "lobster", curie, sans-serif;
@@ -6,10 +14,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 header .header__container {
   background-color: #fad6f1;
   font-family: "lobster", curie, sans-serif;
 }
+
 header .header__container li {
   color: #fff;
   font-size: 18px;
@@ -18,6 +28,7 @@ header .header__container li {
   padding-left: 2rem;
   background-color: #f36ad1;
 }
+
 header .header__container__icons li {
   color: #fff;
   font-size: 18px;
@@ -25,6 +36,7 @@ header .header__container__icons li {
   margin: 18px 0 0 0;
   padding-left: 2rem;
 }
+
 header .header__container__icons li a {
   color: #ffff;
   font-size: 30px;
@@ -32,6 +44,7 @@ header .header__container__icons li a {
   margin: 12px 45px 0 0;
   text-decoration: none;
 }
+
 header .header__container__icons li a .container_icon {
   width: 50px;
   height: 50px;
@@ -39,40 +52,49 @@ header .header__container__icons li a .container_icon {
   border: 2px solid #fff;
   border-radius: 50%;
 }
+
 header .header__container__icons li a .container_icon .fa-brands {
   line-height: 46px;
 }
+
 header .header__container__icons li a:hover {
   transition: all 2s ease;
   background-color: #f36ad1;
 }
 
 /*NAVEGACION*/
+
+
 .container__menu {
   width: 100%;
   height: 120px;
   background-color: aqua;
 }
+
 .container__menu .menu {
   max-width: 1200px;
   margin-left: 5rem;
   height: 100%;
   padding: 0;
 }
+
 .container__menu .menu nav {
   height: 100%;
 }
+
 .container__menu .menu nav ul {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .container__menu .menu nav ul li {
   height: 100%;
   position: relative;
   font-size: 30px;
 }
+
 .container__menu .menu nav ul li a {
   width: 130%;
   height: 100%;
@@ -85,15 +107,18 @@ header .header__container__icons li a:hover {
   font-family: "Lobster", cursive;
   text-decoration: none;
 }
+
 .container__menu .menu nav ul li a :hover {
   transform: scale(1.1);
   background-color: #dddcdc;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
   color: #fff;
 }
+
 .container__menu .menu nav ul li .icon__arriba {
   padding: 0px 0px 0px 10px;
 }
+
 .container__menu .menu nav ul li ul {
   width: 320px;
   display: flex;
@@ -109,6 +134,7 @@ header .header__container__icons li a:hover {
   z-index: 10;
   transition: all 300ms ease;
 }
+
 .container__menu .menu nav ul li ul :before {
   content: "";
   width: 0;
@@ -120,6 +146,7 @@ header .header__container__icons li a:hover {
   top: -12px;
   left: 20px;
 }
+
 .container__menu .menu nav ul li ul li a {
   display: block;
   color: #f1bfef;
@@ -131,6 +158,7 @@ header .header__container__icons li a:hover {
   font-family: "Lobster", cursive;
   text-decoration: none;
 }
+
 .container__menu .menu nav ul li ul li a :hover {
   background: #db5fd7;
   color: #fff;
@@ -139,6 +167,7 @@ header .header__container__icons li a:hover {
   font-size: 25px;
   text-decoration: none;
 }
+
 .container__menu .menu nav ul li :hover ul {
   visibility: visible;
   opacity: 1;
@@ -152,6 +181,7 @@ header .header__container__icons li a:hover {
   margin-top: 2rem;
   padding: 2rem;
 }
+
 .container__logo .contaioner__logo__img {
   width: 25%;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
@@ -168,17 +198,21 @@ header .header__container__icons li a:hover {
   margin-left: 25%;
   background-color: #fae3f9;
 }
+
 .main .container__only {
   box-shadow: 0px 0px 5px 0px #a72095;
 }
+
 .main .main__lista {
   margin: auto;
   padding: auto;
 }
+
 .main .main__lista .main__lista__inline {
   display: inline;
   font-size: 30px;
 }
+
 .main .main__lista .pillar__column {
   display: inline-block;
   padding: 10px;
@@ -186,11 +220,13 @@ header .header__container__icons li a:hover {
   font-family: "Lobster", cursive;
   background-color: white;
 }
+
 .main .main__lista .pillar__column a {
   color: black;
   font-size: 15px;
   text-decoration: none;
 }
+
 .main .main__lista .pillar__column :hover {
   transition: all 300ms ease;
   background-color: #e684d0;
@@ -201,12 +237,14 @@ header .header__container__icons li a:hover {
   display: grid;
   grid-template-columns: 2fr 2fr;
 }
+
 .section .section__columnas {
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 20px;
 }
+
 .section .section__columnas .section__description {
   margin: 10px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664);
@@ -214,23 +252,28 @@ header .header__container__icons li a:hover {
   transition: all 300ms ease;
   background-color: #2e2c2c;
 }
+
 .section .section__columnas .section__description a img {
   width: 100%;
 }
+
 .section .section__columnas .section__description .section__description__cotainer {
   font-size: 18px;
   padding: 10px 10px;
   color: white;
   text-decoration: none;
 }
+
 .section .section__columnas .section__description .section__description__cotainer a {
   text-decoration: none;
 }
+
 .section .section__columnas .section__description .section__description__cotainer h3 {
   color: white;
   margin: 10px;
   font-family: "Helvetica Neue", "Helvetica";
 }
+
 .section .section__columnas .section__description .section__description__cotainer h3 :hover {
   transition: all 2s ease;
   background-color: #279292;
@@ -243,6 +286,7 @@ header .header__container__icons li a:hover {
   text-align: center;
   margin: 50px 0 30px 0;
 }
+
 .caja__boxdulce .caja__boxdulce__description {
   margin: 10px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664);
@@ -251,24 +295,30 @@ header .header__container__icons li a:hover {
   font-size: 18px;
   text-decoration: none;
 }
+
 .caja__boxdulce .caja__boxdulce__description a {
   text-decoration: none;
 }
+
 .caja__boxdulce .caja__boxdulce__description a img {
   width: 100%;
 }
+
 .caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container {
   margin: 10px;
 }
+
 .caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container h3 {
   color: white;
   margin: 10px;
   font-family: "Helvetica Neue", "Helvetica";
 }
+
 .caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container h3 :hover {
   transition: all 2s ease;
   background-color: #279292;
 }
+
 .caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container .precio {
   color: #ffff;
 }
@@ -281,6 +331,7 @@ header .header__container__icons li a:hover {
   color: #fff;
   font-family: "Questrial", sans-serif;
 }
+
 .footer .footer__container {
   padding: 0 2rem 0 0;
   margin: 0 auto;
@@ -288,36 +339,44 @@ header .header__container__icons li a:hover {
   justify-content: space-between;
   font-family: "Lato", sans-serif;
 }
+
 .footer .footer__container .footer__logo {
   width: 25%;
   display: flex;
   flex-direction: column;
   border-bottom: 3px solid #fff;
 }
+
 .footer .footer__container .footer__logo .footer__titulo {
   font-size: 25px;
   padding: 30px 0 0 30px;
 }
+
 .footer .footer__container .footer__logo .footer__titulo .footer__logo__principal {
   width: 30%;
   padding: 30px 0 30px 30px;
 }
+
 .footer .footer__container .footer__info {
   width: 75%;
   padding-left: 5rem;
   align-items: space-between;
   margin-left: 50px;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion {
   display: flex;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna {
   width: 35%;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna h4 {
   font-size: 20px;
   margin-bottom: 30px;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas {
   display: grid;
   padding: 2px;
@@ -325,34 +384,41 @@ header .header__container__icons li a:hover {
   grid-template-columns: repeat(3, 50px);
   border-radius: 10%;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .grid-tarjetas-separacion {
   width: 50px;
   height: 40px;
   color: white;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__img {
   width: 50px;
   height: 40px;
   margin: 0 5px 5px 0;
   border-radius: 10%;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__lista1 li {
   display: inline-block;
   padding-top: 30px;
   font-size: 25px;
   width: 20%;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__lista1 li a {
   color: #fff;
   text-decoration: none;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__lista1 li a :hover {
   transition: all 1s ease;
   background-color: #a33888;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__lista1 li .fa-brands {
   line-height: 46px;
 }
+
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__lista1 li .footer__icon {
   width: 50px;
   height: 50px;

@@ -139,7 +139,7 @@
                     margin: left;
 
                     li {
-                        padding: 2rem;
+                        padding: 26px;
                     }
                 }
 
@@ -153,30 +153,34 @@
                 .lista__seguinos {
                     display: flex;
 
+
                     li {
+                        padding-left: 20px;
+
                         a {
                             font-size: 40px;
                             color: #f1cbe8;
                             font-size: 35px;
                             text-decoration: none;
 
-                            :hover {
+                            &:hover {
                                 transition: all 1.5s ease;
                                 background-color: rgb(142, 51, 179);
                             }
-
-                            .icon__redes__sociales {
-                                width: 60px;
-                                height: 55px;
-                                text-align: center;
-                                border: 3px solid rgb(0, 0, 0);
-                                border-radius: 50%;
-                            }
-
-                            .fa-brands.icon__redes__sociales {
-                                line-height: 50px;
-                            }
                         }
+
+                        .icon__redes__sociales {
+                            width: 60px;
+                            height: 55px;
+                            text-align: center;
+                            border: 2px solid rgb(68, 66, 66);
+                            border-radius: 50%;
+                        }
+
+                        .fa-brands.icon__redes__sociales {
+                            line-height: 50px;
+                        }
+
 
                     }
                 }
@@ -185,6 +189,7 @@
                     li {
                         font-size: 20px;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        padding-top: 20px;
                     }
 
                 }
@@ -205,6 +210,16 @@
         padding: 80px 0 80px 0;
     }
 
+    .form-boton {
+        font-size: 20px;
+        background-color: #000000;
+
+        &:hover {
+            transition: all 300ms ease;
+            color: #000000;
+            background-color: nth($colores, 13);
+        }
+    }
 }
 
 /* RESPONSIVE INDEX PREGUNTAS CARRITO CONTACTOS PRODUCTOS*/
@@ -217,13 +232,18 @@
         padding: 0;
         margin: 0;
 
-        li {
-            img {
-                height: 25px;
-            }
+        .header__container {
+            padding: 0;
+            margin: 0;
 
-            p {
-                display: none;
+            li {
+                img {
+                    height: 25px;
+                }
+
+                p {
+                    display: none;
+                }
             }
         }
 
@@ -239,12 +259,6 @@
     }
 
     /*NAVEGACION*/
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-responsive {
-        display: flex;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
-        width: 100%;
-    }
-
     .container__menu {
         display: none;
     }
@@ -277,7 +291,7 @@
         margin: 30px 0 0 0;
         padding: 0;
 
-        .titulo__h2 {
+        .titulo__h1 {
             width: 200%
         }
     }
@@ -314,45 +328,81 @@
                     display: none;
                 }
             }
-        }
 
-        .footer__info {
-            padding: 0;
-            margin: 0;
 
-            .footer__info__separacion {
-                display: flex;
-                flex-direction: column;
-                margin: 20px 0 20px 0;
+            .footer__info {
+                padding: 0;
+                margin: 0;
 
-                .footer__columna {
-                    margin: 30px;
+                .footer__info__separacion {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px 0 20px 0;
 
-                    h4 {
-                        width: 200px;
-                    }
+                    .footer__columna {
+                        margin: 30px;
 
-                    .footer__lista1 {
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0;
-                        margin: 0;
+                        h4 {
+                            width: 200px;
+                        }
 
-                        li {
-                            margin-left: 50px;
+                        .footer__lista1 {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                margin-left: 50px;
+                            }
+                        }
+
+                        .footer__lista2 {
+                            li {
+                                width: 280px;
+                                padding: 5px;
+                                color: #fff;
+                            }
                         }
                     }
-
-                    .footer__lista2 {
-                        li {
-                            width: 280px;
-                            padding: 5px;
-                            color: #fff;
-                        }
-                    }
-
                 }
             }
+        }
+    }
+
+    /*CARRITO*/
+    .section__carrito {
+        width: 100%;
+
+        h1 {
+            font-family: 'Questrial', sans-serif;
+            padding: 5rem 0 30px 40px;
+        }
+
+        .section__carrito__contenedor {
+            width: 100%;
+            padding: 20px;
+
+
+            .section__carrito__subcontenedor {
+                width: 90%;
+                left: 4rem;
+
+                h2 {
+                    font-family: 'Questrial', sans-serif;
+                }
+            }
+        }
+
+        .section__carrito__boton {
+            padding: 0 0 50px 35px;
+
+            .carrito-boton {
+                background-color: rgb(104, 32, 110);
+                border: 1px solid rgb(104, 32, 110);
+                font-family: 'Questrial', sans-serif;
+            }
+
         }
     }
 
@@ -448,8 +498,8 @@
 
                     .lista__medios__contactos {
                         li {
-                            width: 100%;
-                            padding: 0;
+                            width: 150%;
+                            padding: 15px;
                         }
                     }
 
@@ -474,5 +524,10 @@
 
     .boton__contactos {
         padding-bottom: 60px;
+    }
+
+    /*FORM*/
+    .form-boton {
+        margin-bottom: 40px;
     }
 }
