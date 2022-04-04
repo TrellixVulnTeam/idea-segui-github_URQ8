@@ -66,7 +66,7 @@
 .container__menu {
   width: 100%;
   height: 120px;
-  background-color: #9be4e9;
+  background-color: #9b9595;
 }
 .container__menu .menu {
   max-width: 1200px;
@@ -529,6 +529,17 @@
 }
 .section__carrito .section__carrito__boton {
   padding: 5rem 0 0 13rem;
+}
+.section__carrito .section__carrito__boton .carrito-boton {
+  background-color: #000000;
+  color: #fafafa;
+  border: 2px solid #000000;
+}
+.section__carrito .section__carrito__boton .carrito-boton:hover {
+  transition: all 400ms ease-in-out;
+  color: white;
+  background-color: #e09ddd;
+  border: 2px solid #e09ddd;
 }
 .section__carrito .section__carrito__volver-tienda {
   font-size: 20px;

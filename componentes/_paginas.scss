@@ -70,6 +70,19 @@
 
     .section__carrito__boton {
         padding: 5rem 0 0 13rem;
+
+        .carrito-boton {
+            background-color: #000000;
+            color: #fafafa;
+            border: 2px solid #000000;
+
+            &:hover {
+                transition: all 400ms ease-in-out;
+                color: rgb(255, 255, 255);
+                background-color: rgb(224, 157, 221);
+                border: 2px solid rgb(224, 157, 221);
+            }
+        }
     }
 
     .section__carrito__volver-tienda {
