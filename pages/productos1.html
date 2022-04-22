@@ -12,7 +12,7 @@
     content="HTML, CSS, META, DESAYUNOS ARTESANALES, MERIENDAS, ALFAJORES, CAJAS DULCES, PEDIDOS A DOMICILIO, PASTELERIA JUNIOR, BUENOS AIRES , LA PLATA">
   <title>PetitPiliDesayunos, bienvenidos!! Productos </title>
   <!--ICONO PAGINA PRINCIPAL-->
-  <link rel="shortcut icon" href="./img/logo.jpeg">
+  <link rel="shortcut icon" href="../img/logo.jpeg">
   <!--CSS-->
   <link rel="stylesheet" href="../css/style3.css">
   <!--BOOTSTRAP-->
@@ -67,10 +67,14 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="../pages/productos.html">Productos</a></li>
-              <li><a class="dropdown-item" href="../pages/productos.html">Desayunos y Meriendas</a></li>
-              <li><a class="dropdown-item" href="../pages/productos.html">Tortas</a></li>
-              <li><a class="dropdown-item" href="../pages/productos.html">Alfajores</a></li>
-              <li><a class="dropdown-item" href="../pages/productos.html">Cajas Dulces</a></li>
+              <li><a class="dropdown-item" href="../pages/pages-productos/desyunos-meriendas.html">Desayunos y
+                  Meriendas</a></li>
+              <li><a class="dropdown-item" href="../pages/pages-productos/tortas.html">Tortas</a></li>
+              <li><a class="dropdown-item" href="./pages/pages-productos/tartas.html">Tartas</a></li>
+              <li><a class="dropdown-item" href="../pages/pages-productos/alfajores-galletitas.html">Alfajores y
+                  galletitas</a></li>
+              <li><a class="dropdown-item" href="../pages/pages-productos/cajas-dulces.html">Cajas Dulces</a></li>
+              <li><a class="dropdown-item" href="../pages/pages-productos/otros.html">Otros</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -98,14 +102,16 @@
               <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
             </a>
           </li>
-          <li><a href="../pages/productos.html">Productos
+          <li><a href="../pages/productos1.html">Productos
               <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
             </a>
             <ul>
-              <li><a href="../pages/productos.html">Desayunos y Meriendas</a></li>
-              <li><a href="../pages/productos.html">Tortas</a></li>
-              <li><a href="../pages/productos.html">Alfajores</a></li>
-              <li><a href="../pages/productos.html">Cajas Dulces</a></li>
+              <li><a href="../pages/pages-productos/desyunos-meriendas.html">Desayunos y Meriendas</a></li>
+              <li><a href="../pages/pages-productos/tortas.html">Tortas</a></li>
+              <li><a href="../pages/pages-productos/tartas.html">Tartas</a></li>
+              <li><a href="../pages/pages-productos/alfajores-galletitas.html">Alfajores y galletitas</a></li>
+              <li><a href="../pages/pages-productos/cajas-dulces.html">Cajas Dulces</a></li>
+              <li><a href="../pages/pages-productos/otros.html">Otros</a></li>
             </ul>
           </li>
           <li><a href="../pages/contactos.html">Contactos
@@ -116,7 +122,8 @@
               <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
             </a>
           </li>
-          <li><a href="../pages/carrito.html" class="fa-solid fa-cart-shopping nav__carrito">
+          <li><a href="../pages/carrito.html">
+              <i class="fa-solid fa-cart-shopping"></i>
               <span class="fas fa-angle-up icon__arriba" aria-hidden="true"></span>
             </a>
           </li>
@@ -124,18 +131,153 @@
       </nav>
     </div>
   </div>
+  <div class="contenedor-productos">
+    <div class="contenedor-titulo">
+      <h2 class="titulo-productos">Productos</h2>
+      <p class="resultado-productos">Mostrando 1-11 de 30 resultados</p>
+    </div>
+    <section class="contenedor-section-productos">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-celeste.jpeg" class="imagen-caja-contenedora">
+
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Drip cake celeste</li>
+                  <li class="productos-precio-lista">$3.500</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-verde.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Drip cake </li>
+                  <li class="productos-precio-lista">$4.200</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-pili.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Torta Pili</li>
+                  <li class="productos-precio-lista">$6.500</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-rosa.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Torta rosa</li>
+                  <li class="productos-precio-lista">$3.500</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-marroc.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Drip cake Marroc</li>
+                  <li class="productos-precio-lista">$3.500</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-robot.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Torta Robot</li>
+                  <li class="productos-precio-lista">$4.250</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/rogel-2.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Rogel simple</li>
+                  <li class="productos-precio-lista">$950</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="caja-contenedora">
+              <img src="../img/torta-negra-blanco.jpeg" class="imagen-caja-contenedora">
+              <div class="productos-caja-blanca">
+                <ul class="productos-caja-blanca-lista">
+                  <li class="productos-nombre-lista">Drip cake mitad negro y blanco</li>
+                  <li class="productos-precio-lista">$3.500</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="caja-contenedora">
+                <img src="../img/desayuno-xl.jpeg" class=" imagen-caja-contenedora">
+                <div class="productos-caja-blanca">
+                  <ul class="productos-caja-blanca-lista">
+                    <li class="productos-nombre-lista">Desayuno Petit Amour</li>
+                    <li class="productos-precio-lista">$2.100</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-mf-6 col-lg-4">
+              <div class="caja-contenedora">
+                <img src="../img/box-dulce.jpeg" class="imagen-caja-contenedora">
+                <div class="productos-caja-blanca">
+                  <ul class="productos-caja-blanca-lista">
+                    <li class="productos-nombre-lista">Box Cumple</li>
+                    <li class="productos-precio-lista">$1.550</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+              <div class="caja-contenedora ">
+                <img src="../img/box-dulce2.jpeg" class="imagen-caja-contenedora">
+                <div class="productos-caja-blanca">
+                  <ul class="productos-caja-blanca-lista">
+                    <li class="productos-nombre-lista">Box Tofi</li>
+                    <li class="productos-precio-lista">$950</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <nav aria-label="Page navigation example">
-    <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
+    <ul class=" navegacion-productos">
+      <li class="page-item pagina-siguiente"><a class="page-link pagina-link" href="../pages/productos1.html">1</a></li>
+      <li class="page-item pagina-siguiente"><a class="page-link pagina-link" href="../pages/productos2.html">2</a></li>
+      <li class="page-item pagina-siguiente"><a class="page-link pagina-link" href="../pages/productos3.html">3</a></li>
+      <li class="page-item pagina-siguiente">
+        <a class="page-link pagina-link" href="../pages/productos2.html" aria-label="Next">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
@@ -204,7 +346,7 @@
   </div>
 
 
-
+  <!--BOOTSTRAP JS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>

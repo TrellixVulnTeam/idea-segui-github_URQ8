@@ -40,14 +40,16 @@
     justify-content: space-between;
     flex-direction: column;
 
-    h1 {
-        padding: 5rem 0 0 10rem;
+    .section__carrito__titulo {
+        padding: 5rem 0 0 9rem;
         font-size: 50px;
+        font-family: "Acme", sans-serif;
     }
 
     .section__carrito__contenedor {
-        padding: 5rem 0 0 13rem;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
 
         .section__carrito__subcontenedor {
             border: 2px solid rgb(235, 153, 235);
@@ -62,14 +64,16 @@
                 font-size: 2rem;
             }
 
-            h2 {
-                padding: 20px 0 0 30px
+            .section__carrito__subcontenedor__subtitulo {
+                padding: 20px 0 0 30px;
+                font-size: nth($size, 7);
+                font-family: "Acme", sans-serif;
             }
         }
     }
 
     .section__carrito__boton {
-        padding: 5rem 0 0 13rem;
+        padding: 5rem 0 30px 9rem;
 
         .carrito-boton {
             background-color: #000000;
@@ -131,9 +135,9 @@
     .div__contacto__columna {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-top: 20px;
-        width: 50%;
+
+        padding-top: 5rem;
+        width: 100%;
 
         .div__contacto__titulo {
             h1 {
@@ -235,312 +239,89 @@
     }
 }
 
-/* RESPONSIVE INDEX PREGUNTAS CARRITO CONTACTOS PRODUCTOS*/
-@media screen and (max-width:480px) {
-    /*HEADER*/
+/*PRODUCTOS*/
+.contenedor-productos {
+    padding: 20px;
 
-    .header {
-        height: 60px;
-        width: 480px;
-        padding: 0;
-        margin: 0;
-
-        .header__container {
-            padding: 0;
-            margin: 0;
-
-            li {
-                img {
-                    height: 25px;
-                }
-
-                p {
-                    display: none;
-                }
-            }
-        }
-
-        .header__container__lista5 {
-            img {
-                display: none;
-            }
-        }
-
-        .header__container__icons {
-            display: none;
-        }
-    }
-
-    /*NAVEGACION*/
-    .container__menu {
-        display: none;
-    }
-
-    /*MAIN*/
-    .main {
-        width: 80%;
-        margin: 8px;
-        padding: 10px;
-
-        .main__lista {
-            display: flex;
-            justify-content: space-between;
-            overflow-x: scroll;
-
-            li {
-                display: inline-block;
-
-                a {
-                    width: 137px;
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
-    }
-
-    /*H2 PRODUCTOS MAS VENDIDOS*/
-    .titulo__productos {
-        margin: 30px 0 0 0;
-        padding: 0;
-
-        .titulo__h1 {
-            width: 200%
-        }
-    }
-
-    /*SECTION*/
-    .section {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-
-        .section__columnas {
-            margin: center;
-        }
-    }
-
-    /*FOOTER*/
-    .footer {
-        width: 480px;
-        padding: 0;
-        margin: 0;
-
-        .footer__container {
-            display: flex;
-            flex-direction: column;
-            padding: 0px;
-
-            .footer__logo {
-                display: flex;
-                flex-direction: column;
-                padding-bottom: 4rem;
-                width: 20%;
-
-                .footer__logo__principal {
-                    display: none;
-                }
-            }
-
-
-            .footer__info {
-                padding: 0;
-                margin: 0;
-
-                .footer__info__separacion {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 20px 0 20px 0;
-
-                    .footer__columna {
-                        margin: 30px;
-
-                        h4 {
-                            width: 200px;
-                        }
-
-                        .footer__lista1 {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 0;
-                            margin: 0;
-
-                            li {
-                                margin-left: 50px;
-                            }
-                        }
-
-                        .footer__lista2 {
-                            li {
-                                width: 280px;
-                                padding: 5px;
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /*CARRITO*/
-    .section__carrito {
-        width: 100%;
-
-        h1 {
-            font-family: 'Questrial', sans-serif;
-            padding: 5rem 0 30px 40px;
-        }
-
-        .section__carrito__contenedor {
-            width: 100%;
-            padding: 20px;
-
-
-            .section__carrito__subcontenedor {
-                width: 90%;
-                left: 4rem;
-
-                h2 {
-                    font-family: 'Questrial', sans-serif;
-                }
-            }
-        }
-
-        .section__carrito__boton {
-            padding: 0 0 50px 35px;
-
-            .carrito-boton {
-                background-color: rgb(104, 32, 110);
-                border: 1px solid rgb(104, 32, 110);
-                font-family: 'Questrial', sans-serif;
-            }
-
-        }
-    }
-
-    /*ICONO WHATSAPP*/
-    .container_icon_whatsapp {
-        padding-bottom: 20px;
-    }
-
-    /*PREGUNTAS*/
-    /*ACCORDION*/
-    .container-accordion {
-        width: 70%;
-        margin-left: 5rem;
-        padding: 50px 0 50px 0;
-
-    }
-
-    /*CONTENEDOR REDES SOCIALES*/
-    .contenedor__redes__sociales {
-        width: 480px;
-        height: 180px;
+    .contenedor-titulo {
+        padding: 4rem;
         display: flex;
-        flex-direction: column;
-        padding: auto;
-        margin: auto;
-        background-color: rgb(228, 161, 219);
-        color: #fff;
+        justify-content: space-between;
 
-        h4 {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0 15px 0;
-            font-size: 25px;
+        .titulo-productos {
+            font-size: 30px;
+            font-family: 'Acme', sans-serif;
         }
 
-        p {
+        .resultado-productos {
             display: flex;
-            justify-content: center;
-            font-size: 15px;
+            justify-content: flex-end;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 18px;
+        }
+    }
+
+    .contenedor-section-productos {
+
+
+        .caja-contenedora {
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.664);
+            padding: 20px;
+            margin: 20px;
+            transition: all 300ms ease;
+
+            &:hover {
+                transform: scale(1.12);
+            }
+
+            .imagen-caja-contenedora {
+                width: 100%;
+            }
         }
 
-        ul {
-            display: flex;
-            justify-content: center;
-            padding: 30px 0 50px 0;
+        .productos-caja-blanca {
+            .productos-caja-blanca-lista {
+                padding-left: 10px;
 
-            li {
-                padding: 0 30px 0 40px;
-                font-size: 30px;
+                .productos-nombre-lista {
+                    font-family: 'Courgette', cursive;
+                    font-size: 18px;
+                    padding: 5px;
+                }
 
-                a {
-                    color: #fff;
-                    text-decoration: none;
+                .productos-precio-lista {
+                    font-family: 'Courgette', cursive;
+                    font-size: 18px;
+                    padding: 5px;
                 }
             }
         }
     }
+}
 
-    /*CONTACTOS*/
-    .section__contacto__grid {
 
-        display: grid;
-        grid-template-columns: 1fr;
+/*NUMEROS DENTRO PRODUCTOS*/
+.navegacion-productos {
+    padding-left: 10px;
+    display: flex;
 
-        .div__contacto__columna {
-            margin: 0;
+    .pagina-siguiente {
+        padding: 10px;
+        font-size: 15px;
 
-            .div__contacto__titulo {
-                h1 {
-                    padding: 0;
-                    font-size: 30px;
-                }
-            }
+        .pagina-link {
+            font-size: 20px;
+            color: nth($colores, 8);
+            background-color: #bbb8b8;
+            font-family: 'Courgette',
+                cursive;
 
-            .div__contacto__fila {
-                .div__contacto__fila__info {
-                    width: 100%;
-                    padding: 0;
+            &:hover {
+                transition: all 3ms ease-in;
+                color: nth($colores, 10);
 
-                    ul {
-                        li {
-                            padding: 20px;
-                            width: 150%;
-                            font-size: 14px;
-                        }
-                    }
-
-                    h4 {
-                        padding: 10px 0;
-                        width: 100%;
-                        font-size: 25px
-                    }
-
-                    .lista__medios__contactos {
-                        li {
-                            width: 150%;
-                            padding: 15px;
-                        }
-                    }
-
-                    .lista__seguinos {
-                        margin: 0;
-                        padding: 0;
-                    }
-
-                    .lista__pago {
-                        margin: 0;
-                        padding: 0;
-
-                        li {
-                            font-family: "Font Awesome 6 Free";
-                        }
-                    }
-                }
             }
         }
 
-    }
-
-    .boton__contactos {
-        padding-bottom: 60px;
-    }
-
-    /*FORM*/
-    .form-boton {
-        margin-bottom: 40px;
     }
 }

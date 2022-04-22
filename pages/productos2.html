@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
+    <meta name="keywords"
         content="Los mejores desayunos y meriendas de la Ciudad De La Plata, trabajamos con la mejor materia prima ">
-    <meta property="keywords"
+    <meta property="description"
         content="HTML, CSS, META, DESAYUNOS ARTESANALES, MERIENDAS, ALFAJORES, CAJAS DULCES, PEDIDOS A DOMICILIO, PASTELERIA JUNIOR, BUENOS AIRES , LA PLATA">
-    <title>PetitPiliDesayunos, bienvenidos!! Carrito </title>
+    <title>PetitPiliDesayunos, bienvenidos!! Productos </title>
     <!--ICONO PAGINA PRINCIPAL-->
     <link rel="shortcut icon" href="../img/logo.jpeg">
     <!--CSS-->
@@ -43,7 +44,8 @@
         </ul>
         <ul class="header__container__icons">
             <li><a class="fa-brands fa-instagram container_icon"
-                    href="https://www.instagram.com/petitpilidesayunos/"></a></li>
+                    href="https://www.instagram.com/petitpilidesayunos/"></a>
+            </li>
             <li><a class="fa-brands fa-whatsapp container_icon"
                     href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F9vj5h8&e=ATPJt2H5DWnVCoh4DJHJM-_BHRT5fQCrR8ZvprWQbhVKAGKisjgG4LF6Y7GLg66704LRHWPISe5N0_s49fKz0QJDsLPVz-0K&s=1"></a>
             </li>
@@ -51,7 +53,7 @@
                     href="https://www.facebook.com/petitpilidesayunos"></a></li>
         </ul>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-responsive">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-responsive">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -66,12 +68,12 @@
                             Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="../pages/productos1.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Productos</a></li>
                             <li><a class="dropdown-item"
                                     href="../pages/pages-productos/desyunos-meriendas.html">Desayunos y Meriendas</a>
                             </li>
                             <li><a class="dropdown-item" href="../pages/pages-productos/tortas.html">Tortas</a></li>
-                            <li><a class="dropdown-item" href="./pages/pages-productos/tartas.html">Tartas</a></li>
+                            <li><a class="dropdown-item" href="../pages/pages-productos/tartas.html">Tartas</a></li>
                             <li><a class="dropdown-item"
                                     href="../pages/pages-productos/alfajores-galletitas.html">Alfajores y galletitas</a>
                             </li>
@@ -97,7 +99,7 @@
         <div class="menu">
             <input type="checkbox" id="check__menu">
             <label id="label__check" for="check__menu">
-                <i class="fa-solid fa-bars icon__menu"></i>
+                <p class="fa-solid fa-bars icon__menu"></p>
             </label>
             <nav class="navegacion">
                 <ul>
@@ -136,19 +138,160 @@
             </nav>
         </div>
     </div>
-    <section class="section__carrito ">
-        <h1 class="section__carrito__titulo">Carrito</h1>
-        <div class="section__carrito__contenedor col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-            <div class="section__carrito__subcontenedor">
-                <i class="fa-solid fa-cart-shopping carrito__subcontenedor"></i>
-                <h2 class="section__carrito__subcontenedor__subtitulo">Tu carrito esta vacio</h2>
+    <div class="contenedor-productos">
+        <div class="contenedor-titulo">
+            <h2 class="titulo-productos">Productos</h2>
+            <p class="resultado-productos">Mostrando 12-22 de 30 resultados</p>
+        </div>
+        <section class="contenedor-section-productos">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                    <div class="col">
+                        <div class="caja-contenedora">
+                            <img src="../img/alfajores-por-6.jpeg" class="imagen-caja-contenedora">
+
+                            <div class="productos-caja-blanca">
+                                <ul class="productos-caja-blanca-lista">
+                                    <li class="productos-nombre-lista">Alfajores por 6</li>
+                                    <li class="productos-precio-lista">$750</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caja-contenedora">
+                            <img src="../img/mini-torta-celeste.jpeg" class="imagen-caja-contenedora">
+                            <div class="productos-caja-blanca">
+                                <ul class="productos-caja-blanca-lista">
+                                    <li class="productos-nombre-lista">Drip cake mini </li>
+                                    <li class="productos-precio-lista">$2.500</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caja-contenedora">
+                            <img src="../img/mini-torta.jpeg" class="imagen-caja-contenedora">
+                            <div class="productos-caja-blanca">
+                                <ul class="productos-caja-blanca-lista">
+                                    <li class="productos-nombre-lista">Drip cake rosa</li>
+                                    <li class="productos-precio-lista">$2.850</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caja-contenedora">
+                            <img src="../img/taza.jpeg" class="imagen-caja-contenedora">
+                            <div class="productos-caja-blanca">
+                                <ul class="productos-caja-blanca-lista">
+                                    <li class="productos-nombre-lista">Taza</li>
+                                    <li class="productos-precio-lista">$600</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="caja-contenedora">
+                                <img src="../img/galletitas.jpeg" class=" imagen-caja-contenedora">
+                                <div class="productos-caja-blanca">
+                                    <ul class="productos-caja-blanca-lista">
+                                        <li class="productos-nombre-lista">Box galletitas (x48)</li>
+                                        <li class="productos-precio-lista">$2.500</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-mf-6 col-lg-4">
+                            <div class="caja-contenedora">
+                                <img src="../img/muffins.jpeg" class="imagen-caja-contenedora">
+                                <div class="productos-caja-blanca">
+                                    <ul class="productos-caja-blanca-lista">
+                                        <li class="productos-nombre-lista">Muffins (x12)</li>
+                                        <li class="productos-precio-lista">$1000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="caja-contenedora ">
+                                <img src="../img/boxdulce-2.jpeg" class="imagen-caja-contenedora">
+                                <div class="productos-caja-blanca">
+                                    <ul class="productos-caja-blanca-lista">
+                                        <li class="productos-nombre-lista">Box cumpleañera</li>
+                                        <li class="productos-precio-lista">$1350</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="caja-contenedora">
+                                <img src="../img/tofi2.jpg" class=" imagen-caja-contenedora">
+                                <div class="productos-caja-blanca">
+                                    <ul class="productos-caja-blanca-lista">
+                                        <li class="productos-nombre-lista">Tarta Tofi</li>
+                                        <li class="productos-precio-lista">$2.500</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-mf-6 col-lg-4">
+                            <div class="caja-contenedora">
+                                <img src="../img/alfajores-12.jpeg" class="imagen-caja-contenedora">
+                                <div class="productos-caja-blanca">
+                                    <ul class="productos-caja-blanca-lista">
+                                        <li class="productos-nombre-lista">Alfajores (x12) </li>
+                                        <li class="productos-precio-lista">$1550</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="caja-contenedora ">
+                                <img src="../img/tazon.jpeg" class="imagen-caja-contenedora">
+                                <div class="productos-caja-blanca">
+                                    <ul class="productos-caja-blanca-lista">
+                                        <li class="productos-nombre-lista">Tazon</li>
+                                        <li class="productos-precio-lista">$850</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="section__carrito__boton">
-            <a class="btn btn-primary carrito-boton" href="../pages/productos1.html" role="button">Volver a la
-                Tienda</a>
-        </div>
-    </section>
+        </section>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class=" navegacion-productos">
+            <li class="page-item pagina-siguiente">
+                <a class="page-link pagina-link" href="../pages/productos1.html" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item pagina-siguiente"><a class="page-link pagina-link"
+                    href="../pages/productos1.html">1</a>
+            </li>
+            <li class="page-item pagina-siguiente"><a class="page-link pagina-link"
+                    href="../pages/productos2.html">2</a>
+            </li>
+            <li class="page-item pagina-siguiente"><a class="page-link pagina-link"
+                    href="../pages/productos3.html">3</a>
+            </li>
+            <li class="page-item pagina-siguiente">
+                <a class="page-link pagina-link" href="../pages/productos3.html" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
@@ -203,7 +346,8 @@
                     <div class="footer__columna">
                         <h4>CONTACTANOS</h4>
                         <ul class="footer__lista2">
-                            <li><i class="fa-solid fa-envelope footer__contacto"></i> PetitPiliDesayunos@outlook.es</li>
+                            <li><i class="fa-solid fa-envelope footer__contacto"></i>
+                                PetitPiliDesayunos@outlook.es</li>
                             <li><i class="fa-solid fa-phone footer__contacto"></i>2219585012</li>
                         </ul>
                     </div>
@@ -216,6 +360,7 @@
             href="http://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F9vj5h8&e=ATPJt2H5DWnVCoh4DJHJM-_BHRT5fQCrR8ZvprWQbhVKAGKisjgG4LF6Y7GLg66704LRHWPISe5N0_s49fKz0QJDsLPVz-0K&s=1"></a>
     </div>
 
+
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -224,6 +369,8 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </body>
 
 </html>
