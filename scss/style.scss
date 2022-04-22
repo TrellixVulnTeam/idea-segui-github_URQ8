@@ -1,3 +1,11 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*COMPONENTS*/
 @import "../componentes/header";
 @import "../componentes/nav";
 @import "../componentes/main";
@@ -5,3 +13,14 @@
 @import "../componentes/footer";
 @import "../componentes/paginas";
 @import "../componentes/responsive";
+
+/*BASE*/
+
+
+@import "../base/condicional";
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/maps";
+@import "../base/mixin";
+@import "../base/operadores";
+@import "../base/variables";
