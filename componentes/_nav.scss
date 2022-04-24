@@ -16,6 +16,28 @@
         height: 100%;
         padding: 0;
 
+        #check__menu {
+            display: none;
+        }
+
+        #label__check {
+            width: 26px;
+            height: 100%;
+            display: none;
+
+            .icon__menu {
+                font-size: 40px;
+                color: #fff;
+                cursor: pointer;
+                width: 26px;
+                height: 100%;
+                display: none;
+                align-items: center;
+
+
+            }
+        }
+
         .navegacion {
             height: 100%;
 

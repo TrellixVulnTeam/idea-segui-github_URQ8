@@ -13,10 +13,12 @@
             margin-left: 4rem;
 
             li {
-                font-size: 15px;
+                font-size: 19px;
+
 
                 img {
-                    height: 25px;
+                    height: 32px;
+
                 }
 
                 p {
@@ -41,6 +43,13 @@
         display: none;
     }
 
+    /*CONTAINER__LOGO*/
+    .container__logo {
+        .container__logo__img {
+            width: 45%;
+        }
+    }
+
     /*MAIN*/
     .contenedor-main {
         display: flex;
@@ -49,7 +58,7 @@
         .main {
             margin: 50px;
             padding: 10px;
-            width: 90%;
+            width: 91%;
 
 
             .main__lista {
@@ -57,11 +66,12 @@
                 justify-content: space-between;
                 overflow-x: scroll;
 
-                li {
+                .pillar__column {
                     display: inline-block;
+                    padding: 10px;
 
                     a {
-                        width: 137px;
+                        width: 160px;
                         display: flex;
                         justify-content: center;
                     }
@@ -190,6 +200,7 @@
                 background-color: rgb(104, 32, 110);
                 border: 1px solid rgb(104, 32, 110);
                 font-family: 'Questrial', sans-serif;
+                margin-top: 5rem;
             }
 
         }
@@ -203,12 +214,7 @@
 
     /*PREGUNTAS*/
     /*ACCORDION*/
-    .container-accordion {
-        width: 70%;
-        margin-left: 5rem;
-        padding: 50px 0 50px 0;
 
-    }
 
     /*CONTENEDOR REDES SOCIALES EN LA PARTE DE PREGUNTAS*/
     .contenedor__redes__sociales {
@@ -221,7 +227,7 @@
         background-color: rgb(228, 161, 219);
         color: #fff;
 
-        h4 {
+        h3 {
             display: flex;
             justify-content: center;
             padding: 10px 0 15px 0;
@@ -272,11 +278,11 @@
                     width: 100%;
                     padding: 0;
 
-                    ul {
+                    .lista__medios__contactos {
                         li {
                             padding: 20px;
                             width: 150%;
-                            font-size: 14px;
+                            font-size: 17px;
                         }
                     }
 
@@ -289,7 +295,7 @@
                     .lista__medios__contactos {
                         li {
                             width: 150%;
-                            padding: 15px;
+                            padding: 10px;
                         }
                     }
 
@@ -320,6 +326,45 @@
     .contenedor-productos {
         .contenedor-titulo {
             padding: 0px;
+        }
+
+        .contenedor-section-productos {
+            .caja-contenedora {
+                .productos-caja-blanca {
+                    .productos-caja-blanca-lista {
+                        .productos-nombre-lista {
+                            font-family: "Courgette",
+                                cursive;
+                            font-size: 18px;
+                        }
+
+                        .productos-precio-lista {
+                            font-family: "Courgette",
+                                cursive;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*PAGES PRODCUTOS MODIFICACION DE NAV TITULO Y RESULTADO*/
+    .contenedor-productos {
+        .contenedor-pages-productos {
+            .contenedor-pages-productos-nav {
+                li {
+                    font-size: 20px;
+                }
+
+                .titulo-pages-productos {
+                    font-size: 20px;
+                }
+
+                .resultado-pages-productos {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
@@ -439,6 +484,7 @@
 
     /*CONTACTOS*/
     .section__contacto__grid {
+        width: 100%;
 
         display: grid;
         grid-template-columns: 1fr;
@@ -549,7 +595,18 @@
             }
         }
     }
+
+    /*ICONO WHATSAPP*/
+    .container_icon_whatsapp {
+        position: fixed;
+        width: 120px;
+        height: 90px;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 170px;
+    }
 }
+
 
 @media screen and (max-width:960px) {
     .header {
@@ -611,8 +668,9 @@
                 justify-content: space-between;
                 overflow-x: scroll;
 
-                li {
+                .pillar__column {
                     display: inline-block;
+                    padding: 10px;
 
                     a {
                         width: 137px;
@@ -699,6 +757,7 @@
         margin-left: 30px;
         color: rgb(85, 84, 84);
     }
+
 }
 
 @media screen and (max-width:1140px) {
@@ -713,6 +772,12 @@
             .navegacion {
                 ul {
                     padding: 0;
+
+                    li {
+                        .dropdownmenu-desktop {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -733,11 +798,12 @@
                 justify-content: space-between;
                 overflow-x: scroll;
 
-                li {
+                .pillar__column {
                     display: inline-block;
+                    padding: 10px;
 
                     a {
-                        width: 137px;
+                        width: 160px;
                         display: flex;
                         justify-content: center;
                     }
@@ -748,6 +814,9 @@
 
     .footer {
         padding: 60px 0 0 0;
+        margin-top: 2rem;
+
+
 
         .footer__container {
             padding: 0;
@@ -780,6 +849,23 @@
                     }
                 }
             }
+        }
+    }
+
+    /*CARRITO SECTION*/
+    .section__carrito {
+        height: 100%;
+    }
+
+    /*PREGUNTAS*/
+    /*ACCORDION*/
+    .container-accordion {
+        width: 50%;
+        margin: center;
+        padding: 12rem 0 12rem 0;
+
+        .letter-accordion {
+            font-size: 20px;
         }
     }
 }

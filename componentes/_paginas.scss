@@ -100,29 +100,6 @@
     }
 }
 
-/*icono__menu*/
-.icon__menu {
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-    width: 26px;
-    height: 100%;
-    display: none;
-    align-items: center;
-
-
-}
-
-#label__check {
-    width: 26px;
-    height: 100%;
-    display: none;
-}
-
-#check__menu {
-    display: none;
-}
-
 /*CONTACTOS*/
 .section__contacto__grid {
     display: grid;
@@ -157,6 +134,21 @@
 
                     li {
                         padding: 26px;
+                        font-family: 'Cormorant', serif;
+                        font-size: 20px;
+
+                    }
+
+                    .fa-phone:before {
+                        padding-right: 8px;
+                    }
+
+                    .fa-envelope:before {
+                        padding-right: 8px;
+                    }
+
+                    .fa-location-dot:before {
+                        padding-right: 8px;
                     }
                 }
 
@@ -205,7 +197,7 @@
                 .lista__pago {
                     li {
                         font-size: 20px;
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-family: 'Cormorant', serif;
                         padding-top: 20px;
                     }
 
@@ -299,6 +291,50 @@
     }
 }
 
+/*CONTENEDOR-PAGES-PRODUCTOS (ALFAJORES, CAJAS DULCES, DESAYUNOS, OTROS, TARTAS, TORTAS)*/
+.contenedor-productos {
+    .contenedor-pages-productos {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .contenedor-pages-productos-nav {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                padding-left: 5px;
+                font-family: "Courgette", cursive;
+                font-size: 12px;
+
+                a {
+                    color: #727070;
+                    text-decoration: none;
+                    font-family: "Courgette",
+                        cursive;
+
+                    &:hover {
+                        transition: all 2ms ease-in-out;
+                        color: #b85fbb;
+                    }
+                }
+            }
+        }
+
+        .titulo-pages-productos {
+            padding-left: 20px;
+            color: #b85fbb;
+            font-family: "Courgette",
+                cursive;
+        }
+
+        .resultado-pages-productos {
+            padding: 30px 0 0 20px;
+            font-family: "Courgette",
+                cursive;
+        }
+    }
+}
 
 /*NUMEROS DENTRO PRODUCTOS*/
 .navegacion-productos {

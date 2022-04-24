@@ -5,13 +5,21 @@
   text-decoration: none;
 }
 
+/*COMPONENTS*/
+* {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+
 /*Empieza el Header*/
 .container_fluid {
   padding: 0;
 }
 
 .header {
-  background-color: #fad6f1;
+  background-color: #e7b6e5;
   font-family: "Lobster", cursive;
   width: 100%;
   height: 80px;
@@ -83,6 +91,23 @@
   margin-left: 5rem;
   height: 100%;
   padding: 0;
+}
+.container__menu .menu #check__menu {
+  display: none;
+}
+.container__menu .menu #label__check {
+  width: 26px;
+  height: 100%;
+  display: none;
+}
+.container__menu .menu #label__check .icon__menu {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: none;
+  align-items: center;
 }
 .container__menu .menu .navegacion {
   height: 100%;
@@ -217,7 +242,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 .contenedor-main .main {
   display: flex;
   justify-content: center;
-  width: 68%;
+  width: 76%;
   margin: 4rem;
   padding: 20px;
   background-color: #fae3f9;
@@ -317,12 +342,12 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 .section .section__columnas .section__description .section__description__container a {
   text-decoration: none;
 }
-.section .section__columnas .section__description .section__description__container a h3 {
+.section .section__columnas .section__description .section__description__container a .section__description__container__subtitulo {
   color: white;
   margin: 10px;
   font-family: "Courgette", cursive;
 }
-.section .section__columnas .section__description .section__description__container a h3:hover {
+.section .section__columnas .section__description .section__description__container a .section__description__container__subtitulo:hover {
   transition: all 2s ease;
   background-color: #279292;
 }
@@ -359,17 +384,18 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 .caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container a {
   text-decoration: none;
 }
-.caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container a h3 {
+.caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container a .section__description__container__subtitulo {
   color: white;
   margin: 10px;
-  font-family: "Helvetica Neue", "Helvetica";
+  font-family: "Courgette", cursive;
 }
-.caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container a h3:hover {
+.caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container a .section__description__container__subtitulo:hover {
   transition: all 2s ease;
   background-color: #279292;
 }
 .caja__boxdulce .caja__boxdulce__description .caja__boxdulce__description__container .precio {
   color: #fff;
+  font-family: "Courgette", cursive;
 }
 
 /*Termina caja box__dulce*/
@@ -434,12 +460,12 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 }
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .grid-tarjetas-separacion {
   width: 50px;
-  height: 40px;
+  height: 50px;
   color: white;
 }
 .footer .footer__container .footer__info .footer__info__separacion .footer__columna .grid__tarjetas .footer__img {
   width: 50px;
-  height: 40px;
+  height: 50px;
   margin: 0 5px 5px 0;
   border-radius: 10%;
 }
@@ -483,6 +509,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   height: 90px;
   bottom: 0;
   right: 0;
+  padding-bottom: 130px;
 }
 .container_icon_whatsapp .icon_whatsapp_movible {
   font-size: 80px;
@@ -578,27 +605,6 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   border-radius: 10px;
 }
 
-/*icono__menu*/
-.icon__menu {
-  font-size: 40px;
-  color: #fff;
-  cursor: pointer;
-  width: 26px;
-  height: 100%;
-  display: none;
-  align-items: center;
-}
-
-#label__check {
-  width: 26px;
-  height: 100%;
-  display: none;
-}
-
-#check__menu {
-  display: none;
-}
-
 /*CONTACTOS*/
 .section__contacto__grid {
   display: grid;
@@ -627,6 +633,17 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 }
 .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__medios__contactos li {
   padding: 26px;
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+}
+.section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__medios__contactos .fa-phone:before {
+  padding-right: 8px;
+}
+.section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__medios__contactos .fa-envelope:before {
+  padding-right: 8px;
+}
+.section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__medios__contactos .fa-location-dot:before {
+  padding-right: 8px;
 }
 .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info h4 {
   font-size: 30px;
@@ -662,7 +679,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 }
 .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__pago li {
   font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Cormorant", serif;
   padding-top: 20px;
 }
 
@@ -732,6 +749,40 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   padding: 5px;
 }
 
+/*CONTENEDOR-PAGES-PRODUCTOS (ALFAJORES, CAJAS DULCES, DESAYUNOS, OTROS, TARTAS, TORTAS)*/
+.contenedor-productos .contenedor-pages-productos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav {
+  display: flex;
+  flex-direction: row;
+}
+.contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav li {
+  padding-left: 5px;
+  font-family: "Courgette", cursive;
+  font-size: 12px;
+}
+.contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav li a {
+  color: #727070;
+  text-decoration: none;
+  font-family: "Courgette", cursive;
+}
+.contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav li a:hover {
+  transition: all 2ms ease-in-out;
+  color: #b85fbb;
+}
+.contenedor-productos .contenedor-pages-productos .titulo-pages-productos {
+  padding-left: 20px;
+  color: #b85fbb;
+  font-family: "Courgette", cursive;
+}
+.contenedor-productos .contenedor-pages-productos .resultado-pages-productos {
+  padding: 30px 0 0 20px;
+  font-family: "Courgette", cursive;
+}
+
 /*NUMEROS DENTRO PRODUCTOS*/
 .navegacion-productos {
   padding-left: 10px;
@@ -766,10 +817,10 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     margin-left: 4rem;
   }
   .header .header__container li {
-    font-size: 15px;
+    font-size: 19px;
   }
   .header .header__container li img {
-    height: 25px;
+    height: 32px;
   }
   .header .header__container li p {
     display: none;
@@ -786,6 +837,11 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     display: none;
   }
 
+  /*CONTAINER__LOGO*/
+  .container__logo .container__logo__img {
+    width: 45%;
+  }
+
   /*MAIN*/
   .contenedor-main {
     display: flex;
@@ -794,18 +850,19 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   .contenedor-main .main {
     margin: 50px;
     padding: 10px;
-    width: 90%;
+    width: 91%;
   }
   .contenedor-main .main .main__lista {
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
   }
-  .contenedor-main .main .main__lista li {
+  .contenedor-main .main .main__lista .pillar__column {
     display: inline-block;
+    padding: 10px;
   }
-  .contenedor-main .main .main__lista li a {
-    width: 137px;
+  .contenedor-main .main .main__lista .pillar__column a {
+    width: 160px;
     display: flex;
     justify-content: center;
   }
@@ -909,6 +966,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     background-color: #68206e;
     border: 1px solid #68206e;
     font-family: "Questrial", sans-serif;
+    margin-top: 5rem;
   }
 
   /*ICONO WHATSAPP*/
@@ -918,12 +976,6 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 
   /*PREGUNTAS*/
   /*ACCORDION*/
-  .container-accordion {
-    width: 70%;
-    margin-left: 5rem;
-    padding: 50px 0 50px 0;
-  }
-
   /*CONTENEDOR REDES SOCIALES EN LA PARTE DE PREGUNTAS*/
   .contenedor__redes__sociales {
     width: 100%;
@@ -935,7 +987,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     background-color: #e4a1db;
     color: #fff;
   }
-  .contenedor__redes__sociales h4 {
+  .contenedor__redes__sociales h3 {
     display: flex;
     justify-content: center;
     padding: 10px 0 15px 0;
@@ -976,10 +1028,10 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     width: 100%;
     padding: 0;
   }
-  .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info ul li {
+  .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__medios__contactos li {
     padding: 20px;
     width: 150%;
-    font-size: 14px;
+    font-size: 17px;
   }
   .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info h4 {
     padding: 10px 0;
@@ -988,7 +1040,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   }
   .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__medios__contactos li {
     width: 150%;
-    padding: 15px;
+    padding: 10px;
   }
   .section__contacto__grid .div__contacto__columna .div__contacto__fila .div__contacto__fila__info .lista__seguinos {
     margin: 0;
@@ -1010,6 +1062,25 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   /*PRODUCTOS 1 2 y 3*/
   .contenedor-productos .contenedor-titulo {
     padding: 0px;
+  }
+  .contenedor-productos .contenedor-section-productos .caja-contenedora .productos-caja-blanca .productos-caja-blanca-lista .productos-nombre-lista {
+    font-family: "Courgette", cursive;
+    font-size: 18px;
+  }
+  .contenedor-productos .contenedor-section-productos .caja-contenedora .productos-caja-blanca .productos-caja-blanca-lista .productos-precio-lista {
+    font-family: "Courgette", cursive;
+    font-size: 18px;
+  }
+
+  /*PAGES PRODCUTOS MODIFICACION DE NAV TITULO Y RESULTADO*/
+  .contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav li {
+    font-size: 20px;
+  }
+  .contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav .titulo-pages-productos {
+    font-size: 20px;
+  }
+  .contenedor-productos .contenedor-pages-productos .contenedor-pages-productos-nav .resultado-pages-productos {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -1105,6 +1176,7 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
 
   /*CONTACTOS*/
   .section__contacto__grid {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -1189,6 +1261,16 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     display: block;
     padding-top: 10px;
   }
+
+  /*ICONO WHATSAPP*/
+  .container_icon_whatsapp {
+    position: fixed;
+    width: 120px;
+    height: 90px;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 170px;
+  }
 }
 @media screen and (max-width: 960px) {
   .header {
@@ -1240,10 +1322,11 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     justify-content: space-between;
     overflow-x: scroll;
   }
-  .contenedor-main .main .main__lista li {
+  .contenedor-main .main .main__lista .pillar__column {
     display: inline-block;
+    padding: 10px;
   }
-  .contenedor-main .main .main__lista li a {
+  .contenedor-main .main .main__lista .pillar__column a {
     width: 137px;
     display: flex;
     justify-content: center;
@@ -1321,6 +1404,9 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   .container__menu .menu .navegacion ul {
     padding: 0;
   }
+  .container__menu .menu .navegacion ul li .dropdownmenu-desktop {
+    display: none;
+  }
 
   .contenedor-main {
     display: flex;
@@ -1336,17 +1422,19 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
     justify-content: space-between;
     overflow-x: scroll;
   }
-  .contenedor-main .main .main__lista li {
+  .contenedor-main .main .main__lista .pillar__column {
     display: inline-block;
+    padding: 10px;
   }
-  .contenedor-main .main .main__lista li a {
-    width: 137px;
+  .contenedor-main .main .main__lista .pillar__column a {
+    width: 160px;
     display: flex;
     justify-content: center;
   }
 
   .footer {
     padding: 60px 0 0 0;
+    margin-top: 2rem;
   }
   .footer .footer__container {
     padding: 0;
@@ -1367,6 +1455,22 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   }
   .footer .footer__container .footer__info .footer__info__separacion .footer__columna .footer__lista2 li {
     font-size: 14px;
+  }
+
+  /*CARRITO SECTION*/
+  .section__carrito {
+    height: 100%;
+  }
+
+  /*PREGUNTAS*/
+  /*ACCORDION*/
+  .container-accordion {
+    width: 50%;
+    margin: center;
+    padding: 12rem 0 12rem 0;
+  }
+  .container-accordion .letter-accordion {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1320px) {
@@ -1397,6 +1501,47 @@ nav.navbar.navbar-expand-lg.navbar-light.navbar-responsive {
   .footer .footer__container .footer__info .footer__info__separacion .footer__columna .footer__lista2 li {
     font-size: 14px;
   }
+}
+/*BASE*/
+@media only screen and (min-width: 1024px) {
+  body h3 {
+    font-size: h3desktop;
+  }
+  body p {
+    font-size: 18px;
+  }
+  body a {
+    color: #fff;
+  }
+}
+
+.section-index, .section-columna, .section-description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-index {
+  background-color: coral;
+}
+
+.section-columna {
+  background-color: #a33888;
+  background-color: #2e2c2c;
+}
+
+.section-description {
+  background-color: #f36ad1;
+}
+
+.footer-index {
+  background-color: #a72095;
+  width: 100%;
+  padding: 25px;
+}
+
+.container-img {
+  height: 50% -25%;
 }
 
 /*# sourceMappingURL=style3.css.map */
